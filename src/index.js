@@ -1,45 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Root from "./routes/root";
-import JobBoard, {getData} from './JobBoard';
-import ReferralList, {getCompanyMap as rootLoader, ExpandedCompanyPage} from './ReferralList';
+import {BrowserRouter} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import ErrorPage from "./error-page";
-import './index.css';
-
-const router = createBrowserRouter([
-  {
-      path: "/",
-      element: <Root />,
-      errorElement: <ErrorPage />
-  },
-  {
-    path: "referral-page",
-    element: <ReferralList />,
-    errorElement: <ErrorPage />,
-    loader: rootLoader
-  },
-  {
-    path: "referral-page/:company",
-    element: <ExpandedCompanyPage />,
-    errorElement: <ErrorPage />,
-    loader: rootLoader
-  },
-  {
-    path: "job-board",
-    element: <JobBoard />,
-    errorElement: <ErrorPage />,
-    loader: getData
-  },
-])
+import './styles.css';
+import App from './App';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+    <App /> 
+    </BrowserRouter>
   </React.StrictMode>
 );
 

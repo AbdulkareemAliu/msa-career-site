@@ -25,3 +25,4 @@ yarn-error.log*
 # private api stuff
 src/config.js
 src/oauthlogin.js
+src/utils

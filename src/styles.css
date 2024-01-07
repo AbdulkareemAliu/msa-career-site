@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    gap: 2rem;
+    padding: 1rem 3rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar-item.active{
+    color: #8B0000;
+    text-decoration: underline;
+}
+
+.navbar-item:hover{
+    color: #8B0000;
+    text-decoration: underline;
+}
+
+.navbar-item {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-home img{
+    object-fit: cover;
+}
+
+.home-image:hover {
+    transform: scale(1.075);
+    filter: grayscale(40%);
+    transition: transform 0.1s ease filter 0.5s ease;
+}
+
+.page {
+    width: 100%;
+    position: relative;
+    margin: 0 auto; 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-title-container{
+    text-align: center;
+    font-weight:200px;
+}
+
+.main-title {
+    font-size: 20vh;
+    margin: 0;
+    padding: 0;
+    color: #8B0000;
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+.main-title-accent {
+    font-size: 15vh;
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #807f7f;
+    letter-spacing: 2px; 
+  }
+
+.referral-list-container {
+    height: 400px;
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: auto;
+}
+
+.ag-theme-quartz .ag-row-hover{
+    cursor: pointer;
+}
+
+.ag-row {
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+}
+
+.more-info-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 3vh;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+.more-info-screen h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.return-button {
+    background-color: #8B0000;;
+    color: #fff;
+    padding: 1vh 2vh;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+  
+.return-button:hover {
+    background-color: #770000;;
+}
+
+.posting-page {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.filter-name {
+    font-size: 1.5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    margin: 1vw;
+}
+
+.filter-groups {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vh;
+    top: 0;
+    left: 0;
+}
+
+.filter-group {
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: center;
+    margin: 2vw 0;
+}
+
+.job-postings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10vh;
+}
+
+.job-posting {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    margin: 1vw 0;
+    margin-top: 2vw;
+    max-width: 60vw;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+    display: block;
+}
+
+.job-posting:hover {
+    transform: scale(1.007);
+}
+
+.job-title-type {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+
+.job-title {
+    font-size: 24px;
+    font-weight: bold;
+    color:  #8B0000;
+}
+
+.job-type {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color:  #f4f4f4;
+    background-color: #8B0000;
+    border-radius: 10px;
+}
+
+.company-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #DAA520;
+}
+
+.job-description, .job-reqs, .job-location, .contact, .date-details {
+    margin-top: 10px;
+}
+
+.date-details {
+    font-style: italic;
+}
